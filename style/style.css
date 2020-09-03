@@ -10,16 +10,21 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background: #b7b7b7;
+}
+
 
 /* top-header */
 
 header {
-    background: cadetblue;
+    /* background: cadetblue; */
+    position: fixed;
     width: 95%;
     display: flex;
     justify-content: space-between;
     height: 4.5rem;
-    margin: 4rem auto;
+    margin: 2.5rem 4rem;
 }
 
 
@@ -38,7 +43,12 @@ header .headerbox a img {
 header .nav a {
     font-size: 1.4rem;
     line-height: 4.5rem;
-    margin: 0rem 2rem 0rem 2rem;
+    color: black;
+    margin: 0rem 4rem 0rem 2rem;
+}
+
+header .nav a:hover {
+    color: gold;
 }
 
 
@@ -47,9 +57,81 @@ header .nav a {
 header .nav button {
     font-size: 1.4rem;
     /* line-height: 4.2rem; */
-    border: none;
+    border: .1rem solid gold;
+    background: transparent;
     margin-right: 4rem;
     padding: 1.45rem 2rem;
     /* padding: .85rem 2rem; */
-    border-radius: .3rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+header .nav button:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+
+/* fiexed social icons right */
+
+.social_icons {
+    /* background: chocolate; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 4rem;
+    right: 4%;
+    bottom: 15%;
+    padding-bottom: 2rem;
+}
+
+.social_icons a {
+    margin-right: 2rem;
+}
+
+.line {
+    /* background: chartreuse; */
+    position: fixed;
+    width: 2.5rem;
+    right: 4%;
+    bottom: 0.01%;
+    border-left: .15rem solid rgb(88, 87, 87);
+    padding-left: 2rem;
+    height: 10rem;
+}
+
+.line p {
+    visibility: hidden;
+}
+
+
+/* fixed left mail */
+
+.mail_left a {
+    /* background: chocolate;*/
+    position: fixed;
+    left: 4%;
+    bottom: 15%;
+    writing-mode: vertical-rl;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+    padding-bottom: 2.5rem;
+    color: #154360;
+}
+
+.line_left {
+    /* background: chartreuse; */
+    position: fixed;
+    left: 4%;
+    bottom: 0.01%;
+    border-left: .15rem solid rgb(88, 87, 87);
+    padding-left: 2rem;
+    height: 10rem;
+}
+
+.line_left p {
+    visibility: hidden;
 }
