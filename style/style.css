@@ -59,7 +59,7 @@ header .nav button {
     /* line-height: 4.2rem; */
     border: .1rem solid gold;
     background: transparent;
-    margin-right: 4rem;
+    /* margin-right: 2rem; */
     padding: 1.45rem 2rem;
     /* padding: .85rem 2rem; */
     border-radius: .4rem;
@@ -120,6 +120,7 @@ header .nav button:hover {
     line-height: 1.3rem;
     padding-bottom: 2.5rem;
     color: #154360;
+    z-index: 2;
 }
 
 .line_left {
@@ -130,6 +131,7 @@ header .nav button:hover {
     border-left: .15rem solid rgb(88, 87, 87);
     padding-left: 2rem;
     height: 10rem;
+    z-index: 3;
 }
 
 .line_left p {
