@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +33,28 @@ header {
 
 /* styling logo */
 
+
+/* 
+.headerbox {
+    margin: 1.6rem 0rem 0rem 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    /* background: red; */
+
+
+/* border: .2rem solid #363BA4;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.u {
+    transform: rotate(45deg);
+    transform-origin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: -5rem 5rem 1rem -1rem;
+} */
+
 header .headerbox a img {
     background: transparent;
     width: 4.5rem;
@@ -39,18 +62,7 @@ header .headerbox a img {
     border-radius: 50%;
     border: 0.3rem solid #363BA4;
     margin: 0rem 0rem 0rem 2rem;
-    /* animation: animatenav 1s linear; */
 }
-
-
-/* @keyframes animatenav {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
 
 
 /* styling nav-bar */
@@ -108,15 +120,49 @@ header .nav button:hover {
 }
 
 
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+
 /* //////////////////////////////////// main part starts //////////////////////////////// */
 
 .main {
     /* background: tomato; */
     width: 78%;
-    margin: 7rem auto 5rem auto;
+    margin: 7rem auto 0rem auto;
 }
 
-.main>.aboutme>h1 {
+.main>.intropage {
+    transform-origin: bottom;
+    opacity: 0;
+    animation-name: slideabout;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
+}
+
+@keyframes slideabout {
+    FROM {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+    TO {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.main>.intropage {
+    /* background: rgb(211, 71, 176); */
+    margin-bottom: 15rem;
+}
+
+.main>.intropage>h1 {
     padding: 0.5rem 0rem 0rem 0.3rem;
     font-weight: 200rem;
     letter-spacing: 0.2rem;
@@ -124,21 +170,21 @@ header .nav button:hover {
     color: #363BA4;
 }
 
-.main>.aboutme>h2 {
+.main>.intropage>h2 {
     line-height: 8rem;
     padding: 0rem 0rem 0rem 0.3rem;
     font-size: 8rem;
     letter-spacing: 0.1rem;
 }
 
-.main>.aboutme>.skills {
+.main>.intropage>.skills {
     padding: 0rem 0rem 0rem 0.3rem;
     font-size: 8rem;
     letter-spacing: 0.1rem;
     color: rgb(100, 99, 99);
 }
 
-.main>.aboutme>.para>h1 {
+.main>.intropage>.para>h1 {
     /* background: green; */
     width: 65%;
     margin: 5rem 0rem 0rem 0rem;
@@ -150,7 +196,7 @@ header .nav button:hover {
     letter-spacing: 0.2rem;
 }
 
-.main>.aboutme>.para1>h1 {
+.main>.intropage>.para1>h1 {
     /* background: rgb(60, 105, 60); */
     width: 65%;
     margin: 2rem 0rem 0rem 0rem;
@@ -162,7 +208,7 @@ header .nav button:hover {
     letter-spacing: 0.2rem;
 }
 
-.main>.aboutme>a>button {
+.main>.intropage>a>button {
     margin: 4rem 0rem 0rem .3rem;
     font-weight: bold;
     font-size: 1.4rem;
@@ -172,16 +218,180 @@ header .nav button:hover {
     padding: 1.45rem 2rem;
     border-radius: .4rem;
     cursor: pointer;
+    color: #363BA4;
 }
 
-.main>.aboutme>a>button:hover {
+.main>.intropage>a>button:hover {
     border: 0.1rem solid grey;
     background: #363BA4;
     color: black;
 }
 
 
-/* fiexed social icons right */
+/* ######################### about part starts ######################################## */
+
+.main>.aboutpage {
+    display: flex;
+    /* background: greenyellow; */
+    padding-top: 15rem;
+    margin: 0rem 0rem 15rem 0rem;
+}
+
+.main>.aboutpage>.aboutcontent {
+    /* background: pink; */
+    flex: 55%;
+}
+
+.main>.aboutpage>.aboutcontent>.aboutheading>h3 {
+    font-size: 3.5rem;
+    font-weight: 600rem;
+    /* text-decoration: underline; */
+}
+
+.main>.aboutpage>.aboutcontent>h1 {
+    /* background: rgb(60, 105, 60); */
+    width: 100%;
+    margin: 4rem 0rem 0rem 0rem;
+    padding: 0rem 0.3rem;
+    font-weight: 200rem;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.main>.aboutpage>.aboutcontent>.technologies {
+    /* background: red; */
+    display: flex;
+    width: 100%;
+    margin: 2rem 0rem 0rem 0.5rem;
+}
+
+.main>.aboutpage>.aboutcontent>.technologies>.technologyleft {
+    /* background: orange; */
+    flex: 100%;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.main>.aboutpage>.aboutcontent>.technologies>.technologyleft>ul>li {
+    padding: 0rem 0rem 1.5rem 0rem;
+    color: rgb(100, 99, 99);
+    font-weight: bold;
+}
+
+.main>.aboutpage>.aboutcontent>.technologies>.technologyright {
+    /* background: palevioletred; */
+    flex: 100%;
+    font-size: 1.4rem;
+}
+
+.main>.aboutpage>.aboutcontent>.technologies>.technologyright>ul>li {
+    padding: 0rem 0rem 1.5rem 0rem;
+    color: rgb(100, 99, 99);
+    font-weight: bold;
+}
+
+.main>.aboutpage>.myimage {
+    /* background: plum; */
+    flex: 45%;
+}
+
+.main>.aboutpage>.myimage>img {
+    width: 30rem;
+    height: 39rem;
+    margin: 10rem 0rem 2rem 10rem;
+    border-radius: .6rem;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.3s linear;
+}
+
+.main>.aboutpage>.myimage>img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    transform: scale(1.01);
+}
+
+
+/*  ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+.main>.getintouch {
+    /* background: purple; */
+    margin: 15rem auto 15rem auto;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.main>.getintouch>.getintouch_heading>.aboutheading>h3 {
+    font-size: 3.5rem;
+    font-weight: 600rem;
+    padding: 0rem 0rem 3rem 0rem;
+    /* text-decoration: underline; */
+}
+
+.main>.getintouch>.getintouch_heading>h3 {
+    line-height: 8rem;
+    font-size: 6rem;
+}
+
+.main>.getintouch>.getintouch_heading>.getintouch_content>h1 {
+    /* background: chartreuse; */
+    line-height: 8rem;
+    font-size: 6rem;
+    font-weight: 200rem;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    color: rgb(100, 99, 99);
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.main>.getintouch>.getintouch_heading>a>button {
+    margin: 4rem 0rem 2rem .3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    border: .1rem solid #363BA4;
+    background: transparent;
+    padding: 1.45rem 2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    color: #363BA4;
+}
+
+.main>.getintouch>.getintouch_heading>a>button:hover {
+    border: 0.1rem solid grey;
+    background: #363BA4;
+    color: black;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+/* fixed social icons right */
 
 .social_icons {
     /* background: chocolate; */
@@ -229,7 +439,6 @@ header .nav button:hover {
     right: 4%;
     bottom: 0.01%;
     border-left: .15rem solid rgb(100, 99, 99);
-    ;
     padding-left: 2rem;
     height: 10rem;
     transform-origin: right center;
@@ -259,10 +468,10 @@ header .nav button:hover {
 /* fixed left mail */
 
 .mail_left a {
-    transition: all ease 0.5s;
+    color: #363BA4;
 }
 
-.mail_left a {
+.mail_left {
     /* background: chocolate;*/
     position: fixed;
     left: 4%;
@@ -279,6 +488,11 @@ header .nav button:hover {
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-delay: 1.5s;
+    transition: all ease 0.5s;
+}
+
+.mail_left {
+    transform: scale(1.5);
 }
 
 @keyframes slidesocial {
@@ -290,10 +504,6 @@ header .nav button:hover {
         transform: scaleY(1);
         opacity: 1;
     }
-}
-
-.mail_left a:hover {
-    transform: scale(0.8);
 }
 
 .line_left {
@@ -326,3 +536,15 @@ header .nav button:hover {
 .line_left p {
     visibility: hidden;
 }
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
