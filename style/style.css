@@ -322,7 +322,118 @@ header .nav button:hover {
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
 
+/* ########################### project part starts ################################### */
+
+.projects {
+    /* background: purple; */
+    padding: 15rem 0rem;
+}
+
+.projects>.projectheading>h3 {
+    font-size: 3.5rem;
+    font-weight: 600rem;
+    text-align: center;
+}
+
+.projects>.projectsbox {
+    /* background: chartreuse; */
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0rem;
+}
+
+.projectbox1 {
+    /* background: chocolate; */
+    width: 40rem;
+    height: 28rem;
+    box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
+}
+
+.projectbox1>.folders {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+
+/* .projectbox1>.folder1 {
+    padding: 3rem 0rem 0rem 3rem;
+} */
+
+.projectbox1>.folders>.folder2 {
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.projectbox1>.projectname>h1 {
+    font-size: 2.4rem;
+    font-weight: 600rem;
+    padding: 3rem 0rem 0rem 3rem;
+    color: #fff;
+}
+
+.projectbox1>.projectabout>h1 {
+    font-size: 1.8rem;
+    font-weight: 300rem;
+    padding: 1.5rem 0rem 0rem 3rem;
+}
+
+.projectbox1>.technologyused {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(100, 99, 99);
+    padding: 3rem 2rem 0rem 3rem;
+    justify-content: space-between;
+}
+
+
+/* ---------- */
+
+.projectbox2 {
+    /* background: orange; */
+    width: 40rem;
+    height: 28rem;
+    box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
+    ;
+}
+
+.projectbox2>.folders {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.projectbox2>.folders>.folder2 {
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.projectbox2>.projectname>h1 {
+    font-size: 2.4rem;
+    font-weight: 300rem;
+    padding: 3rem 0rem 0rem 3rem;
+    color: #fff;
+}
+
+.projectbox2>.projectabout>h1 {
+    font-size: 1.8rem;
+    font-weight: 300rem;
+    padding: 1.5rem 0rem 0rem 3rem;
+}
+
+.projectbox2>.technologyused {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(100, 99, 99);
+    padding: 3rem 2rem 0rem 3rem;
+    justify-content: space-between;
+}
+
+
 /* ////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ########################### contact part starts ################################### */
 
 .main>.getintouch {
     /* background: purple; */
@@ -376,6 +487,21 @@ header .nav button:hover {
     border: 0.1rem solid grey;
     background: #363BA4;
     color: black;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ############################# social icons responsive #####################*/
+
+.social_icons_responsive {
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
 }
 
 
@@ -548,3 +674,267 @@ header .nav button:hover {
 
 
 /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ########################## responsive ######################################### */
+
+@media only screen and (max-width: 850px) {
+    /* html {
+        font-size: 40%;
+    } */
+    header {
+        /* background: blueviolet; */
+        /* position: fixed; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 4.5rem;
+        margin: 2.5rem 4rem 2.5rem 2rem;
+    }
+    header .headerbox a img {
+        background: transparent;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: 0.3rem solid #363BA4;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .main {
+        /* background: tomato; */
+        width: 100%;
+        margin: 5rem 2rem 5rem 2rem;
+    }
+    .main>.intropage>.para>h1 {
+        /* background: green; */
+        width: 100%;
+    }
+    .main>.intropage>h1 {
+        font-size: 1.4rem;
+    }
+    .main>.intropage>h2 {
+        line-height: 8rem;
+        font-size: 4rem;
+    }
+    .main>.intropage>.skills {
+        font-size: 4rem;
+        line-height: 5.5rem;
+    }
+    .main>.intropage>.para>h1 {
+        /* background: green; */
+        width: 100%;
+        margin: 5rem 2rem 0rem 0rem;
+        padding: 0rem 2rem 0rem 0.3rem;
+        font-weight: 200rem;
+        letter-spacing: 0.2rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: 0.2rem;
+    }
+    .main>.intropage>.para1>h1 {
+        /* background: rgb(60, 105, 60); */
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    /* ------- */
+    /* ----- */
+    /*  about part */
+    .main>.aboutpage {
+        display: flex;
+        /* background: greenyellow; */
+        padding-top: 0rem;
+        margin: 0rem 0rem 15rem 0rem;
+    }
+    .main>.aboutpage>.aboutcontent {
+        /* background: pink; */
+        flex: 100%;
+    }
+    .main>.aboutpage>.aboutcontent>.aboutheading>h3 {
+        font-size: 2.4rem;
+    }
+    .main>.aboutpage>.aboutcontent>h1 {
+        font-size: 1.8rem;
+    }
+    .main>.aboutpage>.myimage {
+        /* background: plum; */
+        flex: 100%;
+    }
+    .main>.aboutpage>.myimage>img {
+        width: 21rem;
+        height: 27rem;
+        margin: 10rem 0rem 2rem 5rem;
+    }
+    .main>.aboutpage {
+        flex-direction: column;
+    }
+    /* ------- */
+    /* ------- */
+    /* #### projects #### */
+    .projects {
+        /* background: purple; */
+        padding: 0rem 0rem 15rem 0rem;
+    }
+    .projects>.projectheading>h3 {
+        font-size: 2.4rem;
+    }
+    .projects>.projectsbox {
+        flex-direction: column;
+    }
+    .projectbox1 {
+        /* background: chocolate; */
+        width: 35rem;
+        height: 28rem;
+        box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
+        margin-bottom: 5rem;
+        margin-right: 1rem;
+    }
+    .projectbox2 {
+        /* background: chocolate; */
+        width: 35rem;
+        height: 28rem;
+        box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
+        margin-bottom: 5rem;
+        margin-right: 1rem;
+    }
+    /* ----- */
+    /* ----- */
+    /* ##### contact part */
+    .main>.getintouch {
+        /* background: purple; */
+        margin: 0rem auto 15rem auto;
+        width: 100%;
+    }
+    .main>.getintouch>.getintouch_heading>.aboutheading>h3 {
+        font-size: 2.4rem;
+        font-weight: 600rem;
+        padding: 0rem 0rem 3rem 0rem;
+        /* text-decoration: underline; */
+    }
+    .main>.getintouch>.getintouch_heading>h3 {
+        line-height: 4rem;
+        font-size: 4rem;
+        font-weight: 800rem;
+        color: #fff;
+    }
+    .main>.getintouch>.getintouch_heading>.getintouch_content>h1 {
+        /* background: chartreuse; */
+        line-height: 8rem;
+        font-size: 6rem;
+        font-weight: 200rem;
+        letter-spacing: 0.2rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        letter-spacing: 0.2rem;
+        color: rgb(100, 99, 99);
+        padding: 3rem 2rem 2rem 0rem;
+    }
+    /*  */
+    /*  */
+    /* ##### social icons */
+    .social_icons_responsive {
+        /* background: goldenrod; */
+        display: flex;
+        justify-content: space-between;
+        visibility: visible;
+        margin: 2rem 6rem 5rem 4rem;
+    }
+    /* ------- */
+    /* hidden part */
+    header .nav {
+        visibility: hidden;
+    }
+    .social_icons {
+        visibility: hidden;
+    }
+    .line {
+        visibility: hidden;
+    }
+    .mail_left {
+        visibility: hidden;
+    }
+    .line_left {
+        visibility: hidden;
+    }
+}
+
+
+/*  */
+
+
+/*  */
+
+#sideNav {
+    width: 21rem;
+    height: 100%;
+    position: fixed;
+    right: -25rem;
+    top: 0;
+    z-index: 2;
+    background: rgb(228, 226, 226);
+    transition: 0.5s;
+    text-align: center;
+}
+
+#sidenav {
+    visibility: hidden;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+nav button {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    border: .1rem solid #363BA4;
+    background: transparent;
+    padding: 1.45rem 2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+nav button:hover {
+    color: #363BA4;
+    cursor: pointer;
+    transform: scale(0.98);
+}
+
+#menuBtn {
+    width: 5rem;
+    position: fixed;
+    right: 6.5rem;
+    top: 3.5rem;
+    z-index: 2;
+    cursor: pointer;
+    color: #fff;
+}
+
+#menuBtn {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 850px) {
+    #menuBtn {
+        visibility: visible;
+    }
+    nav ul {
+        margin-top: 11rem;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+    #menuBtn {
+        width: 5rem;
+        right: 2rem;
+        top: 3rem;
+        color: #363BA4;
+    }
+}
