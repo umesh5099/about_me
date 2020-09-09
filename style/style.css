@@ -326,7 +326,7 @@ header .nav button:hover {
 
 .projects {
     /* background: purple; */
-    padding: 15rem 0rem;
+    padding: 2rem 0rem;
 }
 
 .projects>.projectheading>h3 {
@@ -335,18 +335,34 @@ header .nav button:hover {
     text-align: center;
 }
 
-.projects>.projectsbox {
-    /* background: chartreuse; */
+.swiper-container {
+    /* background: indianred; */
+    width: 50%;
+}
+
+
+/* .swiper-slide {
+    background: hotpink;
+    background-position: center;
+    background-size: cover;
+    width: 100rem;
+    height: 40rem;
+    margin: 0 auto;
+} */
+
+
+/* .projects>.projectsbox {
+    background: chartreuse;
     display: flex;
     justify-content: space-around;
-    padding: 4rem 0rem;
-}
+    padding: 4rem 0rem 0rem 0rem;
+} */
 
 .projectbox1 {
     /* background: chocolate; */
-    width: 40rem;
-    height: 28rem;
-    box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
+    width: 100%;
+    height: 32rem;
+    background: rgb(177, 175, 175);
 }
 
 .projectbox1>.folders {
@@ -355,13 +371,12 @@ header .nav button:hover {
     margin: 2rem;
 }
 
-
-/* .projectbox1>.folder1 {
-    padding: 3rem 0rem 0rem 3rem;
-} */
+.projectbox1>.folders>.folder1 {
+    padding: 2rem 0rem 0rem 0rem;
+}
 
 .projectbox1>.folders>.folder2 {
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 2.5rem 0rem 0rem 0rem;
 }
 
 .projectbox1>.projectname>h1 {
@@ -391,10 +406,9 @@ header .nav button:hover {
 
 .projectbox2 {
     /* background: orange; */
-    width: 40rem;
-    height: 28rem;
-    box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
-    ;
+    width: 100%;
+    height: 32rem;
+    background: rgb(177, 175, 175);
 }
 
 .projectbox2>.folders {
@@ -403,8 +417,12 @@ header .nav button:hover {
     margin: 2rem;
 }
 
+.projectbox2>.folders>.folder1 {
+    padding: 2rem 0rem 0rem 0rem;
+}
+
 .projectbox2>.folders>.folder2 {
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 2.5rem 0rem 0rem 0rem;
 }
 
 .projectbox2>.projectname>h1 {
@@ -425,8 +443,24 @@ header .nav button:hover {
     font-size: 1.4rem;
     font-weight: bold;
     color: rgb(100, 99, 99);
-    padding: 3rem 2rem 0rem 3rem;
+    padding: 3rem 2rem 2rem 3rem;
     justify-content: space-between;
+}
+
+.blogs {
+    /* background: purple; */
+    padding: 2rem 0rem;
+    margin-top: 15rem;
+}
+
+
+/* ////////////////////////////////// Blogs ////////////////////////////////////// */
+
+.blogs>.projectheading>h3 {
+    font-size: 3.5rem;
+    font-weight: 600rem;
+    text-align: center;
+    /* padding-top: 15rem; */
 }
 
 
@@ -769,31 +803,47 @@ header .nav button:hover {
     /* ------- */
     /* ------- */
     /* #### projects #### */
-    .projects {
-        /* background: purple; */
-        padding: 0rem 0rem 15rem 0rem;
+    .swiper-container {
+        /* background: olivedrab; */
+        width: 100%;
+        margin-bottom: 15rem;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
     }
     .projects>.projectheading>h3 {
         font-size: 2.4rem;
+        padding-top: 0rem;
     }
     .projects>.projectsbox {
         flex-direction: column;
     }
     .projectbox1 {
         /* background: chocolate; */
-        width: 35rem;
+        width: 99%;
         height: 28rem;
         box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
         margin-bottom: 5rem;
         margin-right: 1rem;
+        border-left: none;
+        border-bottom: none;
     }
     .projectbox2 {
         /* background: chocolate; */
-        width: 35rem;
+        width: 99%;
         height: 28rem;
         box-shadow: 1rem 1rem 3rem rgb(100, 99, 99);
-        margin-bottom: 5rem;
+        margin-bottom: 0rem;
         margin-right: 1rem;
+        border-left: none;
+        border-bottom: none;
+    }
+    .blogs {
+        /* background: purple; */
+        padding: 2rem 0rem;
+        margin-top: 15rem;
+    }
+    .blogs>.projectheading>h3 {
+        font-size: 2.4rem;
     }
     /* ----- */
     /* ----- */
